@@ -10,33 +10,17 @@ Feedback is provided in terms of heuristic function
 
 
 <h2>Algorithm:</h2>
-<p>
-<ol>
- <li> Evaluate the initial state.If it is a goal state then return it and quit. Otherwise, continue with initial state as current state.</li> 
-<li>Loop until a solution is found or there are no new operators left to be applied in current state:
-<ul><li>Select an operator that has not yet been applied to the current state and apply it to produce a new state</li>
-<li>Evaluate the new state:
-  <ul>
-<li>if it is a goal state, then return it and quit</li>
-<li>if it is not a goal state but better than current state then make new state as current state</li>
-<li>if it is not better than current state then continue in the loop</li>
-    </ul>
-</li>
-</ul>
-</li>
-</ol>
+Step 1- Read the target string from the user.
 
-</p>
-<hr>
-<h3> Steps Applied:</h3>
-<h3>Step-1</h3>
-<p> Generate Random String of the length equal to the given String</p>
-<h3>Step-2</h3>
-<p>Mutate the randomized string each character at a time</p>
-<h3>Step-3</h3>
-<p> Evaluate the fitness function or Heuristic Function</p>
-<h3>Step-4:</h3>
-<p> Lopp Step -2 and Step-3  until we achieve the score to be Zero to achieve Global Minima.</p>
+Step 2- Generate a random initial solution of the same length as the target.
+
+Step 3- Calculate the score (difference) between the current solution and the target.
+
+Step 4- Repeat the following steps until the score becomes zero: a. Display the current score and solution. b. Mutate one random character in the current solution to create a new solution. c. Calculate the score of the new solution. d. If the new solution has a lower score, replace the old one.
+
+Step 5- When the score becomes zero, stop the process.
+
+Step 6- Print the final solution as the target string.
 
 ## PROGRAM
 ```
